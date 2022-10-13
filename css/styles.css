@@ -45,7 +45,11 @@
 
 /* Estilos del contenedor del banner */
 .contenedorBanner {
-    margin-top: 20px;
+    text-align: center;
+    margin-top: 5px;
+    padding: 5px;
+    font-size: 1rem;
+    
 }
 
 /* Article del bienvenidos */
@@ -106,8 +110,6 @@
 
 /* Estilos del contacto */
 /* Formulario*/
-
-
 .form {
     width: 450px;
     margin: auto;
@@ -141,4 +143,20 @@
     color: #FFFFFF;
     background-color: #990000;
     border: 1px solid #000000;
+}
+
+/* Estilos pagina Servicios */
+.contenedorGrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    text-align-last: auto;
+    margin-inline: 5px;
+    padding-top: 5px;
+}
+
+.gridItemServicios{
+    height: 120px;
+    background-color: skyblue;
+    border: 2px solid black;
 }
