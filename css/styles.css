@@ -49,7 +49,7 @@
     margin-top: 5px;
     padding: 5px;
     font-size: 1rem;
-    
+
 }
 
 /* Article del bienvenidos */
@@ -146,7 +146,7 @@
 }
 
 /* Estilos pagina Servicios */
-.contenedorGrid{
+.contenedorGrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     place-items: center;
@@ -155,8 +155,85 @@
     padding-top: 5px;
 }
 
-.gridItemServicios{
+.gridItemServicios {
     height: 120px;
     background-color: skyblue;
-    border: 2px solid black;
+}
+
+/* Estilos mobile first responsive */
+@media (max-width:320px) {
+    .body {
+        background-color: yellow;
+        grid-template-columns: 100%;
+    }
+
+    .banner {
+        width: 100%;
+    }
+
+    .infocard {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 20px;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .infocard_contenedorDeTexto {
+        padding: 20px;
+    }
+
+    .infocard__imag {
+        width: 100%;
+    }
+}
+
+@media (min-width:320px) and (max-width:768px) {
+    .body {
+        background-color: blue;
+        grid-template-columns: 100%;
+        margin: 10px;
+    }
+
+    .bienvenidosAprysma {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .nav-item {
+        width: 10px;
+        margin: 0;
+    }
+
+    .contenedorBanner {
+        width: 100%;
+    }
+
+    .banner {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .contenedorPrincipal {
+        width: 100%;
+    }
+
+    .info {
+        display: grid;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    .body {
+        background-color: red;
+        grid-template-columns: 100%;
+    }
+
+    .banner {
+        width: 100%;
+    }
 }
