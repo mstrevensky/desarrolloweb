@@ -107,6 +107,24 @@
     width: 260px;
 }
 
+/*Clase de productos*/
+.info .infocard__imag {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
 
 /* Estilos del contacto */
 /* Formulario*/
@@ -117,7 +135,7 @@
 
 .form legend {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .form ol {
@@ -125,7 +143,7 @@
 }
 
 .form ol li {
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .form ol li label {
@@ -138,26 +156,45 @@
     border: 2px solid #CCCCCC;
 }
 
-.form input.btn {
-    padding: 8px;
+.btnFormContainer {
+    height: 40px;
+    text-align: center;
+}
+
+.btn {
+    padding: 15px;
+    background-color: #dddddd;
+    border: 3px solid #eeeeee;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover {
     color: #FFFFFF;
     background-color: #990000;
-    border: 1px solid #000000;
+    border: 3px solid #000000;
 }
 
 /* Estilos pagina Servicios */
 .contenedorGrid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 3fr);
     place-items: center;
     text-align-last: auto;
-    margin-inline: 5px;
-    padding-top: 5px;
+    margin-inline: 3px;
+    padding-top: 3px;
 }
 
 .gridItemServicios {
-    height: 120px;
+    height: 130px;
     background-color: skyblue;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-inline: 10px;
+    padding-top: 10px;
+    
+    
 }
 
 /* Estilos mobile first responsive */

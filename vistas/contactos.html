@@ -9,14 +9,15 @@
 
     <link type="text/css" rel="stylesheet" href="../css/styles.css">
 </head>
+<!-- Pagina general -->
 
 <body class="body">
-
+    <!-- Contenedor de la cabecera -->
     <div class="contenedorHeader">
         <div class="contenedorImagen">
             <img src="../img/logo.png" class="headerLogo" />
         </div>
-
+        <!-- Contenedor de la botonera -->
         <div class="contenedorBotonera">
             <ul>
                 <li class="nav-item">
@@ -37,32 +38,36 @@
             </ul>
         </div>
     </div>
-
+    <!-- Contenedor del banner -->
     <div class="contenedorBanner">
         <img src="../img/imagen_principal.jpg" class="banner">
     </div>
-
-
+      <!-- Contenedor principal -->
     <div class="contenedorPrincipal">
         <h1>CONTACTANOS</h1>
-        <form name="frm" method="post" action="muchas-gracias.html" class="form">
+        <form name="frm" method="post" action="/" class="form">
             <fieldset id="form">
-                <legend>Formulario de Contacto</legend>
+                <legend>Formulario de Contacto</legend> <!-- Formulario -->
                 <ol>
-                    <li><label>Nombre: </label><input type="text" name="fname" size="25" /></li>
-                    <li><label>E-mail: </label><input type="text" name="femail" size="25" /></li>
-                    <li><label>Mensaje: </label><input type="text" name="mensaje" size="25" /></li>
-                    </ul>
-                    <p align="center"><input type="submit" name="submit" class="btn" value="Enviar" /></p>
+                    <li><label>Nombre </label><input type="text" name="fname" size="25" /></li>
+                    <li><label>E-mail </label><input type="text" name="femail" size="25" /></li>
+                    <li><label>Mensaje </label><input type="text" name="mensaje" size="25" /></li>
+                </ol>
+                <div class="btnFormContainer">
+                    <a href="muchas-gracias.html" class="btn">Enviar</a>
+                </div>
             </fieldset>
         </form>
     </div>
+     <!-- Pie de pagina -->
     <footer id="pie">
         <div class="infocard">
-        <p class="infocard__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis id deleniti
-          cumque culpa, vero pariatur eveniet neque doloribus minima consequuntur quia accusamus corrupti, dolores iste,
-          quae adipisci veniam odit praesentium.</p>
-      </div>
+            <p class="infocard__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis id deleniti
+                cumque culpa, vero pariatur eveniet neque doloribus minima consequuntur quia accusamus corrupti, dolores
+                iste,
+                quae adipisci veniam odit praesentium.</p>
+        </div>
     </footer>
 </body>
+
 </html>
