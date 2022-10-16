@@ -111,19 +111,19 @@
 .info .infocard__imag {
     animation-duration: 3s;
     animation-name: slidein;
-  }
-  
-  @keyframes slidein {
+}
+
+@keyframes slidein {
     from {
-      margin-left: 100%;
-      width: 300%
+        margin-left: 100%;
+        width: 300%
     }
-  
+
     to {
-      margin-left: 0%;
-      width: 100%;
+        margin-left: 0%;
+        width: 100%;
     }
-  }
+}
 
 
 /* Estilos del contacto */
@@ -185,16 +185,50 @@
     padding-top: 3px;
 }
 
+.contenedorItemServicios {
+    width: 100%;
+    margin-bottom: 10px;
+    border: 5px dotted skyblue;
+    border-radius: 10px;
+}
+
 .gridItemServicios {
     height: 130px;
-    background-color: skyblue;
+    /*  background-color: skyblue;*/
     margin-left: 10px;
     padding-left: 10px;
     padding-right: 10px;
     margin-inline: 10px;
     padding-top: 10px;
-    
-    
+
+}
+
+.imagenServicioContenedor {
+    display: inline-block;
+}
+
+@media (min-width:768px) {
+    .gridItemServicios {
+        width: 70%;
+        float: left;
+    }
+
+    .imagenServicioContenedor {
+        width: 25%;
+    }
+}
+
+.imgServicio {
+    width: 100%;
+}
+
+
+/* Pagina servicios-movile first responsive*/
+#Grid {
+    /*background: linear-gradient(45deg, red, blue);*/
+    width: 80%;
+    margin: auto;
+    text-align: center;
 }
 
 /* Estilos mobile first responsive */
@@ -224,6 +258,10 @@
     .infocard__imag {
         width: 100%;
     }
+
+    #Grid {
+        width: 100%;
+    }
 }
 
 @media (min-width:320px) and (max-width:768px) {
@@ -231,6 +269,7 @@
         background-color: blue;
         grid-template-columns: 100%;
         margin: 10px;
+        color: black;
     }
 
     .bienvenidosAprysma {
@@ -241,10 +280,6 @@
     .nav-item {
         width: 10px;
         margin: 0;
-    }
-
-    .contenedorBanner {
-        width: 100%;
     }
 
     .banner {
@@ -262,15 +297,78 @@
     .info {
         display: grid;
     }
+
+    /* Pagina servicios-movile first responsive*/
+    #Grid {
+        background: linear-gradient(45deg, red, blue);
+        width: 100%;
+    }
+
+    .gridItemServicios {
+        height: auto;
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        padding-bottom: 20px;
+
+    }
+
+    .imagenServicio {
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    /* Pagina contacto-mobile first responsive*/
+    .form {
+        width: auto;
+        font-size: small;
+    }
+
+    .form legend {
+        font-size: 15px;
+    }
+
+
 }
 
 @media (min-width:768px) and (max-width:1024px) {
     .body {
         background-color: red;
         grid-template-columns: 100%;
+
     }
 
     .banner {
         width: 100%;
     }
+
+    .info {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .contenedorPrincipal {
+        width: 100%;
+    }
+
+    .infocard__imag {
+        width: 100%;
+    }
+
+    /* Pagina servicios mobile first responsive*/
+    .gridItemServicios {
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+        width: 50%;
+        height: auto;
+        float: none;
+        display: inline-block;
+    }
+
+    .imagenServicio {
+        margin: 5px;
+        text-align: center;
+    }
+
 }
