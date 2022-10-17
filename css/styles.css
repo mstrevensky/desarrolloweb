@@ -80,6 +80,7 @@
     position: relative;
     width: 1024px;
     margin: auto;
+    text-align: center;
 }
 
 /* Estilos del titulo de la pagina */
@@ -235,32 +236,9 @@
 @media (max-width:320px) {
     .body {
         background-color: yellow;
-        grid-template-columns: 100%;
     }
-
-    .banner {
-        width: 100%;
-    }
-
-    .infocard {
-        margin-left: 0;
-        margin-right: 0;
-        margin-top: 0;
-        margin-bottom: 20px;
-        padding: 0;
-        border-radius: 0;
-    }
-
-    .infocard_contenedorDeTexto {
-        padding: 20px;
-    }
-
-    .infocard__imag {
-        width: 100%;
-    }
-
-    #Grid {
-        width: 100%;
+    .colorConozcanos{
+        color: #000000;
     }
 }
 
@@ -293,9 +271,19 @@
     .contenedorPrincipal {
         width: 100%;
     }
-
+    
+    .colorConozcanos{
+        margin-left: 10px;
+        text-align: center;
+    }
+    
     .info {
         display: grid;
+    }
+    
+    .infocard{
+        padding: 10px;
+        margin: 10px;
     }
 
     /* Pagina servicios-movile first responsive*/
@@ -349,6 +337,8 @@
 
     .contenedorPrincipal {
         width: 100%;
+        margin: 10px;
+        text-align: center;
     }
 
     .infocard__imag {
@@ -372,3 +362,4 @@
     }
 
 }
+
