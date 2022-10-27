@@ -31,17 +31,26 @@
     display: inline-block;
 }
 
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: cadetblue;
+    
+}
+.nav-link {
+    color: cadetblue;
+}
+
 /* Clase para definir los elementos de la botonera*/
 .nav-item {
     display: inline;
     margin: 20px;
     font-weight: 700;
+    color: cadetblue;
 }
-
 /* Agregar color al pasar con el mouse por arriba de la botonera*/
 .nav-link:hover {
     color: red;
 }
+
 
 /* Estilos del contenedor del banner */
 .contenedorBanner {
@@ -246,8 +255,10 @@
     .body {
         background-color: blue;
         grid-template-columns: 100%;
-        margin: 10px;
         color: black;
+    }
+    .navbar{
+        flex-wrap: nowrap;
     }
 
     .bienvenidosAprysma {
