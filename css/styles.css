@@ -31,10 +31,12 @@
     display: inline-block;
 }
 
-.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+.navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link {
     color: cadetblue;
-    
+
 }
+
 .nav-link {
     color: cadetblue;
 }
@@ -46,6 +48,7 @@
     font-weight: 700;
     color: cadetblue;
 }
+
 /* Agregar color al pasar con el mouse por arriba de la botonera*/
 .nav-link:hover {
     color: red;
@@ -135,7 +138,6 @@
     }
 }
 
-
 /* Estilos del contacto */
 /* Formulario*/
 .form {
@@ -177,6 +179,7 @@
     border: 3px solid #eeeeee;
     cursor: pointer;
     text-decoration: none;
+    display: inline;
 }
 
 .btn:hover {
@@ -210,135 +213,28 @@
     padding-right: 10px;
     margin-inline: 10px;
     padding-top: 10px;
-
 }
 
 .imagenServicioContenedor {
     display: inline-block;
 }
 
-@media (min-width:768px) {
-    .gridItemServicios {
-        width: 70%;
-        float: left;
-    }
-
-    .imagenServicioContenedor {
-        width: 25%;
-    }
-}
-
-.imgServicio {
-    width: 100%;
-}
-
-
-/* Pagina servicios-movile first responsive*/
-#Grid {
-    /*background: linear-gradient(45deg, red, blue);*/
-    width: 80%;
-    margin: auto;
-    text-align: center;
-}
-
-/* Estilos mobile first responsive */
-@media (max-width:320px) {
-    .body {
-        background-color: yellow;
-    }
-    .colorConozcanos{
-        color: #000000;
-    }
-}
-
-@media (min-width:320px) and (max-width:768px) {
-    .body {
-        background-color: blue;
-        grid-template-columns: 100%;
-        color: black;
-    }
-    .navbar{
-        flex-wrap: nowrap;
-    }
-
-    .bienvenidosAprysma {
-        margin: 0%;
-        padding: 0%;
-    }
-
-    .nav-item {
-        width: 10px;
-        margin: 0;
-    }
-
-    .banner {
-        width: 100%;
-    }
-
-    h1 {
-        font-size: 18px;
-    }
-
-    .contenedorPrincipal {
-        width: 100%;
-    }
-    
-    .colorConozcanos{
-        margin-left: 10px;
-        text-align: center;
-    }
-    
-    .info {
-        display: grid;
-    }
-    
-    .infocard{
-        padding: 10px;
-        margin: 10px;
-    }
-
-    /* Pagina servicios-movile first responsive*/
-    #Grid {
-        background: linear-gradient(45deg, red, blue);
-        width: 100%;
-    }
-
-    .gridItemServicios {
-        height: auto;
-        display: block;
-        text-align: center;
-        margin-top: 20px;
-        padding-bottom: 20px;
-
-    }
-
-    .imagenServicio {
-        margin-top: 5px;
-        text-align: center;
-    }
-
-    /* Pagina contacto-mobile first responsive*/
-    .form {
-        width: auto;
-        font-size: small;
-    }
-
-    .form legend {
-        font-size: 15px;
-    }
-
-
-}
+/* fin pagina */
+/* comienzo media queries responsive*/
 
 @media (min-width:768px) and (max-width:1024px) {
     .body {
-        background-color: red;
+        background-color: beige;
         grid-template-columns: 100%;
-
     }
 
     .banner {
         width: 100%;
+    }
+
+    .logoNavbar {
+        max-width: 100%;
+        max-height: 100%;
     }
 
     .info {
@@ -371,6 +267,153 @@
         margin: 5px;
         text-align: center;
     }
-
 }
 
+/* Media queries min-width 768 */
+@media (min-width:768px) {
+    .banner {
+        min-width: 40px;
+    }
+
+    .contenedorItemServicios {
+        margin-top: 5px;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+
+    .imagenServicioContenedor {
+        width: 35%;
+
+    }
+
+    .imgServicio {
+        width: 80%;
+    }
+
+    .contenedorImagenLogo {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+
+    .img-fluid {
+        width: 600px;
+        height: 100px;
+    }
+
+    .navbar-toggler {
+        margin: 40px;
+    }
+}
+
+/* Pagina servicios-movile first responsive*/
+#Grid {
+    /*background: linear-gradient(45deg, red, blue);*/
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+@media (min-width:320px) and (max-width:768px) {
+    .body {
+        background-color: blue;
+        grid-template-columns: 100%;
+        color: black;
+    }
+
+    .navbar {
+        /*flex-wrap: nowrap;*/
+        flex-direction: initial;
+    }
+
+    .bienvenidosAprysma {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .nav-item {
+        /*width: 10px;*/
+        margin: 0;
+    }
+
+    .banner {
+        width: 100%;
+    }
+
+    .contenedorBanner {
+        margin-top: 20px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .contenedorPrincipal {
+        width: 100%;
+    }
+
+    .colorConozcanos {
+        margin-left: 10px;
+        text-align: center;
+    }
+
+    .info {
+        display: grid;
+    }
+
+    .infocard {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    /* Pagina servicios-movile first responsive*/
+    #Grid {
+        background: linear-gradient(45deg, beige, blue);
+        width: 100%;
+    }
+
+    .gridItemServicios {
+        height: auto;
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        padding-bottom: 20px;
+
+    }
+
+    .imagenServicio {
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    /* Pagina contacto-mobile first responsive*/
+    .form {
+        width: auto;
+        font-size: small;
+    }
+
+    .form legend {
+        font-size: 15px;
+    }
+}
+
+/* Estilos mobile first responsive */
+@media (max-width:320px) {
+    .body {
+        background-color: white;
+    }
+
+    .banner {
+        min-width: 20px;
+    }
+
+    .colorConozcanos {
+        color: #000000;
+    }
+}
+
+@media (min-width:1024px) {
+    .logoNavbar {
+        max-width: 200px;
+        max-height: 40px;
+    }
+}
