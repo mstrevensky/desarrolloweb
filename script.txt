@@ -1,0 +1,5 @@
+
+"build-css": "node --include-path scss sass/Node/main.scss css/estilos.css",
+"watch-css": "nodemon -e scss -x \"npm run build-css\""
+
+  
