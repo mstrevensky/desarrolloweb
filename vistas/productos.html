@@ -8,7 +8,7 @@
   <title>Desarrollo Web - Marisa Strevensky</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <link type="text/css" rel="stylesheet" href="../css/styles.css">
+  <link type="text/css" rel="stylesheet" href="../css/estilos.css">
 </head>
 <!-- Contenedor general -->
 
@@ -26,20 +26,20 @@
         </button>
         <div id="navbarNav" class="collapse navbar-collapse">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+            <li class="navbar__nav-item">
+              <a class="navbar__nav-link" aria-current="page" href="../index.html">Inicio</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../vistas/productos.html">Productos</a>
+            <li class="navbar__nav-item">
+              <a class="navbar__nav-link" href="../vistas/productos.html">Productos</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../vistas/servicios.html">Servicios</a>
+            <li class="navbar__nav-item">
+              <a class="navbar__nav-link" href="../vistas/servicios.html">Servicios</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../vistas/ubicacion.html">Ubicacion</a>
+            <li class="navbar__nav-item">
+              <a class="navbar__nav-link" href="../vistas/ubicacion.html">Ubicacion</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../vistas/contactos.html">Contactos</a>
+            <li class="navbar__nav-item">
+              <a class="navbar__nav-link" href="../vistas/contactos.html">Contactos</a>
             </li>
           </ul>
         </div>
@@ -47,45 +47,36 @@
     </nav>
   </header>
   <!-- Contenedor del banner -->
-  <div class="contenedorBanner">
-    <img src="../img/imagen_principal.jpg" class="banner">
+  <div class="banner">
+    <img src="../img/imagen_principal.jpg" class="banner__contenedor">
   </div>
   <!-- Contenedor principal -->
-  <div class="contenedorPrincipal">
-    <h1 class="colorConozcanos">NUESTROS PRODUCTOS</h1>
+  <div class="contenedor">
+    <h1 class="contenedor__titulo">NUESTROS PRODUCTOS</h1>
     <!-- Seccion de las imagenes e informacion -->
     <section class="info">
-      <div class="infocard">
-        <img class="infocard__imag" src="../img/imagen2.webp" alt="imagen principal">
-        <h2 class="infocard__titulo">Info 1</h2>
-        <p class="infocard__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis id deleniti
-          cumque culpa, vero pariatur eveniet neque doloribus minima consequuntur quia accusamus corrupti, dolores
-          iste,
-          quae adipisci veniam odit praesentium.</p>
+      <div class="info__infocard">
+        <img class="info__infocard__imag" src="../img/imagen2.webp" alt="imagen principal">
+        <h2 class="info__infocard__titulo">DISEÑA</h2>
+        <p class="info__infocard__desc">Prysma softwere diseña las herramientas necesarias</p>
       </div>
-      <div class="infocard">
-        <img class="infocard__imag" src="../img/imagen3.jpg" alt="imagen medio">
-        <h2 class="infocard__titulo">Info 2</h2>
-        <p class="infocard__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, facilis. Est
-          sequi
-          nostrum alias voluptatibus molestiae id eum hic quasi et recusandae, culpa, aut illum adipisci tempore autem
-          voluptates in!</p>
+      <div class="info__infocard">
+        <img class="info__infocard__imag" src="../img/imagen3.jpg" alt="imagen medio">
+        <h2 class="info__infocard__titulo">ELABORA</h2>
+        <p class="info__infocard__desc">Prysma softwere elabora las herramientas necesarias</p>
       </div>
-      <div class="infocard">
-        <img class="infocard__imag" src="../img/imagen4.webp" alt="imagen final">
-        <h2 class="infocard__titulo">Info 3</h2>
-        <p class="infocard__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eum animi placeat
-          enim numquam beatae, similique ipsum esse possimus sint iure porro adipisci recusandae explicabo deleniti,
-          dolor nostrum aliquid officia.</p>
+      <div class="info__infocard">
+        <img class="info__infocard__imag" src="../img/imagen4.webp" alt="imagen final">
+        <h2 class="info__infocard__titulo">INVENTA</h2>
+        <p class="info__infocard__desc">Prysma softwere inventa las herramientas necesarias</p>
       </div>
     </section>
   </div>
   <!-- Pie de pagina -->
-  <footer id="pie">
-    <div class="infocard">
-      <p class="infocard__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis id deleniti
-        cumque culpa, vero pariatur eveniet neque doloribus minima consequuntur quia accusamus corrupti, dolores iste,
-        quae adipisci veniam odit praesentium.</p>
+  <footer id="info__pie">
+    <div class="info__infocard">
+      <p class="info__infocard__desc">+50 CLIENTES HAN CONFIADO EN LOS SERVICIOS QUE OFRECEMOS Y NUESTRO MAYOR
+        DESEO ES SEGUIR CRECIENDO JUNTO A USTEDES.</p>
 
     </div>
   </footer>

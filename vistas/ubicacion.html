@@ -8,7 +8,7 @@
     <title>Desarrollo Web - Marisa Strevensky</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link type="text/css" rel="stylesheet" href="../css/styles.css">
+    <link type="text/css" rel="stylesheet" href="../css/estilos.css">
 </head>
 
 <body class="body">
@@ -25,20 +25,20 @@
                 </button>
                 <div id="navbarNav" class="collapse navbar-collapse">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        <li class="navbar__nav-item">
+                            <a class="navbar__nav-link" aria-current="page" href="../index.html">Inicio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../vistas/productos.html">Productos</a>
+                        <li class="navbar__nav-item">
+                            <a class="navbar__nav-link" href="../vistas/productos.html">Productos</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../vistas/servicios.html">Servicios</a>
+                        <li class="navbar__nav-item">
+                            <a class="navbar__nav-link" href="../vistas/servicios.html">Servicios</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../vistas/ubicacion.html">Ubicacion</a>
+                        <li class="navbar__nav-item">
+                            <a class="navbar__nav-link" href="../vistas/ubicacion.html">Ubicacion</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../vistas/contactos.html">Contactos</a>
+                        <li class="navbar__nav-item">
+                            <a class="navbar__nav-link" href="../vistas/contactos.html">Contactos</a>
                         </li>
                     </ul>
                 </div>
@@ -46,11 +46,11 @@
         </nav>
     </header>
     <!-- Contenedor banner -->
-    <div class="contenedorBanner">
-        <img src="../img/imagen_principal.jpg" class="banner">
+    <div class="banner">
+        <img src="../img/imagen_principal.jpg" class="banner__contenedor">
     </div>
     <!-- Contenedor principal de la Ubicacion -->
-    <div class="contenedorPrincipal">
+    <div class="contenedor">
         <h1>DONDE NOS ENCONTRAMOS</h1>
         <div>
             <!-- Mapa google -->
@@ -62,12 +62,9 @@
         </div>
     </div>
     <!-- Pie de pagina -->
-    <footer id="pie">
-        <div class="infocard">
-            <p class="infocard__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis id deleniti
-                cumque culpa, vero pariatur eveniet neque doloribus minima consequuntur quia accusamus corrupti, dolores
-                iste,
-                quae adipisci veniam odit praesentium.</p>
+    <footer id="info__pie">
+        <div class="info__infocard">
+            <p class="info__infocard__desc">PRYSMA SOFTWERE: ESPECIALISTAS EN DESARROLLO DE APLICACIONES Y PÁGINAS WEBS.</p>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
