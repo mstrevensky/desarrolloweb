@@ -1,0 +1,26 @@
+/* Estilos pagina Servicios */
+.contenedorGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    place-items: center;
+    text-align-last: auto;
+    margin-inline: 3px;
+    padding-top: 3px; }
+  
+  .contenedorItemServicios {
+    width: 100%;
+    margin-bottom: 10px;
+    border: 5px dotted skyblue;
+    border-radius: 10px; }
+  
+  .gridItemServicios {
+    height: 130px;
+    /*  background-color: skyblue;*/
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-inline: 10px;
+    padding-top: 10px; }
+  
+  .imagenServicioContenedor {
+    display: inline-block; }

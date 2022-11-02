@@ -6,16 +6,9 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: cadetblue;
 }
-
 /* Estilos del contenedor de la cabecera */
 .contenedorHeader {
     text-align: center;
-}
-
-/* Estilos del contenedor de la imagen principal */
-.contenedorImagen {
-    position: relative;
-    display: inline;
 }
 
 /* Clase del logo */
@@ -24,6 +17,7 @@
     top: 15px;
     position: relative;
 }
+
 
 /* Contenedor de la botonera */
 .contenedorBotonera {
@@ -54,6 +48,11 @@
     color: red;
 }
 
+/* Estilos del contenedor de la imagen principal */
+.contenedorImagen {
+    position: relative;
+    display: inline;
+}
 
 /* Estilos del contenedor del banner */
 .banner {
@@ -61,7 +60,12 @@
     margin-top: 5px;
     padding: 5px;
     font-size: 1rem;
+}
 
+/* Estilos del banner */
+.banner__contenedor {
+    width: 100%;
+    height: 400px;
 }
 
 /* Article del bienvenidos */
@@ -71,12 +75,6 @@
     margin: 20px;
     position: relative;
     font-size: 30px;
-}
-
-/* Estilos del banner */
-.banner__contenedor {
-    width: 100%;
-    height: 400px;
 }
 
 .subtitulo {
@@ -114,12 +112,6 @@
     border-radius: 20px;
 }
 
-/* Clase de la imagen*/
-
-.info__infocard__imag {
-    width: 260px;
-}
-
 /*Clase de productos*/
 .info .info__infocard__imag {
     animation-duration: 3s;
@@ -127,6 +119,9 @@
 }
 .info__infocard__desc{
     text-align: center;
+}
+.info__infocard__imag {
+    width: 260px;
 }
 
 @keyframes slidein {
@@ -327,25 +322,25 @@
         /*flex-wrap: nowrap;*/
         flex-direction: initial;
     }
-
+    
+    .navbar__nav-item {
+        /*width: 10px;*/
+        margin: 0;
+    }
+    
     .bienvenidosAprysma {
         margin: 0%;
         padding: 0%;
     }
-
-    .navbar__nav-item {
-        /*width: 10px;*/
-        margin: 0;
+    
+    .banner {
+        margin-top: 20px;
     }
 
     .banner__contenedor {
         width: 100%;
     }
-
-    .banner {
-        margin-top: 20px;
-    }
-
+    
     h1 {
         font-size: 18px;
     }

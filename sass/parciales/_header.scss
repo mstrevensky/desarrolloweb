@@ -1,0 +1,49 @@
+/* Estilos del contenedor de la cabecera */
+.contenedorHeader {
+    text-align: center; }
+  
+  /* Clase del logo */
+  .headerLogo {
+    width: 200px;
+    top: 15px;
+    position: relative; }
+  
+  /* Contenedor de la botonera */
+  .contenedorBotonera {
+    position: relative;
+    display: inline-block; }
+  
+  .navbar-nav .nav-link.active,
+  .navbar-nav .show > .navbar__nav-link {
+    color: cadetblue; }
+  
+  .navbar__nav-link {
+    color: cadetblue; }
+  
+  /* Clase para definir los elementos de la botonera*/
+  .navbar__nav-item {
+    display: inline;
+    margin: 20px;
+    font-weight: 700;
+    color: cadetblue; }
+  
+  /* Agregar color al pasar con el mouse por arriba de la botonera*/
+  .navbar__nav-link:hover {
+    color: red; }
+    /* Estilos del contenedor de la imagen principal */
+.contenedorImagen {
+  position: relative;
+  display: inline; }
+
+/* Estilos del contenedor del banner */
+.banner {
+  text-align: center;
+  margin-top: 5px;
+  padding: 5px;
+  font-size: 1rem; }
+
+/* Estilos del banner */
+.banner__contenedor {
+  width: 100%;
+  height: 400px; }
+  
