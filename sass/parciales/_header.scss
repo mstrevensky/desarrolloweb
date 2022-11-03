@@ -15,17 +15,17 @@
   
   .navbar-nav .nav-link.active,
   .navbar-nav .show > .navbar__nav-link {
-    color: cadetblue; }
+    color: $color-principal; }
   
   .navbar__nav-link {
-    color: cadetblue; }
+    color: $color-principal; }
   
   /* Clase para definir los elementos de la botonera*/
   .navbar__nav-item {
     display: inline;
     margin: 20px;
     font-weight: 700;
-    color: cadetblue; }
+    color: $color-principal; }
   
   /* Agregar color al pasar con el mouse por arriba de la botonera*/
   .navbar__nav-link:hover {

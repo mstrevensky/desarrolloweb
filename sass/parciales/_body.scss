@@ -1,56 +1,70 @@
+@import "./variables";
+
 /* Article del bienvenidos */
 .bienvenidosAprysma {
-    text-align: center;
-    padding: 10px;
-    margin: 20px;
-    position: relative;
-    font-size: 30px; }
-  
-  .subtitulo {
-    text-align: center;
-    font-size: 20px;
-    padding: 10px;
-    margin: 10px;
-    color: cadetblue; }
-  
-  /* Estilos del contenedor principal */
-  .contenedor {
-    position: relative;
-    width: 1024px;
-    margin: auto;
-    text-align: center; }
-  
-  /* Estilos del titulo de la pagina */
-  .contenedor__titulo {
-    color: cadetblue; }
-  
-  /* Seccion de las imagenes e informacion */
-  .info {
-    display: flex;
-    flex-direction: row; }
-  
-  .info__infocard {
+  text-align: center;
+  padding: 10px;
+  margin: 20px;
+  position: relative;
+  font-size: 30px;
+  color: $color-principal;
+}
+
+.subtitulo {
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* Estilos del contenedor principal */
+.contenedor {
+  position: relative;
+  width: 1024px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Estilos del titulo de la pagina */
+.contenedor__titulo {
+  color: cadetblue;
+}
+
+/* Seccion de las imagenes e informacion */
+.info {
+  display: flex;
+  flex-direction: row;
+  animation-duration: 3s;
+  animation-name: slidein;
+
+  &__infocard {
     color: white;
     background-color: cornflowerblue;
     padding: 30px;
     margin: 10px;
-    border-radius: 20px; }
-  
-  /*Clase de productos*/
-  .info .info__infocard__imag {
+    border-radius: 20px;
+  }
+
+  &__infocard__imag {
+    /*Clase de productos*/
     animation-duration: 3s;
-    animation-name: slidein; }
-  
-  .info__infocard__desc {
-    text-align: center; }
-  
-  .info__infocard__imag {
-    width: 260px; }
-  
-  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%; }
-    to {
-      margin-left: 0%;
-      width: 100%; } }
+    animation-name: slidein;
+    width: 260px;
+  }
+
+  &__infocard__desc {
+    text-align: center;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
